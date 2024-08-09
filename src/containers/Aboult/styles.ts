@@ -9,6 +9,7 @@ export const GitHubSection = styled.div`
 
     @media (max-width: 768px) {
       width: 100%;
+      height: auto;
     }
   }
 `

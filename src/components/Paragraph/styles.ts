@@ -4,7 +4,9 @@ import { Props } from '.'
 
 export const P = styled.p<Props>`
   font-size: ${(props) => (props.fontSize ? props.fontSize + 'px' : '14px')};
-  color: #282a35;
-  color: ${(props) => (props.color === 'main' ? '#282a35' : '#949494')};
+  color: ${(props) =>
+    props.color === 'main'
+      ? props.theme.mainColor
+      : props.theme.secundaryColor};
   line-height: 22px;
 `
